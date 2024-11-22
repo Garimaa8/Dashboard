@@ -75,7 +75,7 @@ def main_pg():
             scrn.place(relx=0.5, rely=0.5, anchor="center")
 
             # Logo
-            logo_i = Image.open("/Users/garimagrover/PycharmProjects/dash/schl_logo.png")
+            logo_i = Image.open("schl_logo.png")
             logo_i = logo_i.resize((160, 100))
             logo_i1 = ImageTk.PhotoImage(logo_i)
             logo = tk.Label(win, width=170, height=140, image=logo_i1)
@@ -94,7 +94,7 @@ def main_pg():
 
             if g=='F':
                 r=random.randint(1,5)
-                im = Image.open(f"/Users/garimagrover/PycharmProjects/dash/girl/{r}.png")
+                im = Image.open(f"girl/{r}.png")
                 im = im.resize((220, 160))
                 img = ImageTk.PhotoImage(im)
                 img_label = tk.Label(win, width=200, height=160, image=img)
@@ -102,7 +102,7 @@ def main_pg():
 
             elif g=='M':
                 r=random.randint(1,5)
-                im = Image.open(f"/Users/garimagrover/PycharmProjects/dash/boy/{r}.png")
+                im = Image.open(f"boy/{r}.png")
                 im = im.resize((220, 160))
                 img = ImageTk.PhotoImage(im)
                 img_label = tk.Label(win, width=200, height=160, image=img)
